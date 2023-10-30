@@ -1,8 +1,9 @@
 {
   "scripts": {
     "watch:sass": "node-sass -w styles/scss/style.scss styles/css/style.css"
-},
+  },
   "dependencies": {
+    "bootstrap": "^5.3.2",
     "node-sass": "^9.0.0"
   }
 }

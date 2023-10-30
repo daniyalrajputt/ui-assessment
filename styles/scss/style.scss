@@ -1,8 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
 @import 'variables';
 @import 'typo';
 @import 'colors';
-@import 'component';
+@import 'button';
+
+
 
 * {
     box-sizing: border-box;
@@ -19,6 +23,62 @@ body {
     font-family: 'Inter', sans-serif;
 }
 
-.color {
-    color: $primary;
+.text-green {
+    color: $green;
+}
+
+.text-d-grey {
+    color: $d-grey;
+}
+
+.text-grey {
+    color: $grey;
+}
+
+@media (min-width: 1400px) {
+
+    .container,
+    .container-sm,
+    .container-md,
+    .container-lg,
+    .container-xl,
+    .container-xxl {
+        max-width: 1200px;
+    }
+}
+
+header {
+    background: $silver;
+
+    .navbar {
+        .navbar-nav {
+            gap: 1rem;
+
+            .nav-link {
+                color: $text-grey-900;
+                font-size: 1rem;
+                line-height: 1.5rem;
+                font-weight: 400;
+                display: inline-block;
+            }
+        }
+    }
+
+    .button-wrap {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+}
+
+
+// Main Banner 
+.hero-section {
+    background: $silver;
+    padding: 6rem 0;
+}
+
+
+.client-section {
+    padding: 2.5rem 0;
 }
