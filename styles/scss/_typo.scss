@@ -4,6 +4,10 @@ $inter: 'Inter', sans-serif;
     font-size: 4rem;
     line-height: 1.1875;
     font-family: $inter;
+
+    @media(max-width:767px) {
+        font-size: 2.25rem;
+    }
 }
 
 .heading-2 {
@@ -13,8 +17,8 @@ $inter: 'Inter', sans-serif;
 }
 
 .heading-3 {
-    font-size: 1.875rem;
-    line-height: 1.2857;
+    font-size: 1.75rem;
+    line-height: 1.285;
     font-family: $inter;
 }
 
@@ -22,4 +26,29 @@ $inter: 'Inter', sans-serif;
     font-size: 1.25rem;
     line-height: 1.4;
     font-family: $inter;
+}
+
+.text-lg {
+    font-family: $inter;
+    font-size: 18px;
+    line-height: 28px;
+    /* 155.556% */
+}
+
+.text-md {
+    font-family: $inter;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.text-sm {
+    font-family: $inter;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.text-xs {
+    font-family: $inter;
+    font-size: 12px;
+    line-height: 16px;
 }

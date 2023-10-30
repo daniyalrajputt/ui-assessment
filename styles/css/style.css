@@ -9293,6 +9293,9 @@ textarea.form-control-lg {
   font-size: 4rem;
   line-height: 1.1875;
   font-family: "Inter", sans-serif; }
+  @media (max-width: 767px) {
+    .heading-1 {
+      font-size: 2.25rem; } }
 
 .heading-2 {
   font-size: 2.25rem;
@@ -9300,14 +9303,35 @@ textarea.form-control-lg {
   font-family: "Inter", sans-serif; }
 
 .heading-3 {
-  font-size: 1.875rem;
-  line-height: 1.2857;
+  font-size: 1.75rem;
+  line-height: 1.285;
   font-family: "Inter", sans-serif; }
 
 .heading-4 {
   font-size: 1.25rem;
   line-height: 1.4;
   font-family: "Inter", sans-serif; }
+
+.text-lg {
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  line-height: 28px;
+  /* 155.556% */ }
+
+.text-md {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  line-height: 24px; }
+
+.text-sm {
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  line-height: 20px; }
+
+.text-xs {
+  font-family: "Inter", sans-serif;
+  font-size: 12px;
+  line-height: 16px; }
 
 .btn-sm, .btn-group-sm > .btn {
   display: inline-flex;
@@ -9382,10 +9406,6 @@ header {
       line-height: 1.5rem;
       font-weight: 400;
       display: inline-block; }
-  header .button-wrap {
-    display: flex;
-    align-items: center;
-    gap: 1rem; }
 
 .hero-section {
   background: #F5F7FA;
@@ -9393,3 +9413,28 @@ header {
 
 .client-section {
   padding: 2.5rem 0; }
+  .client-section ul {
+    gap: 0 1rem; }
+    .client-section ul li {
+      margin: 1.5rem 0; }
+
+.system-section {
+  padding: 3.25rem 0; }
+  .system-section .sys-card {
+    text-align: center;
+    display: flex;
+    padding: 1.5rem 2rem;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 4px 0px rgba(171, 190, 209, 0.2); }
+
+.achievements-section {
+  padding: 4rem 0;
+  background: #F5F7FA; }
+
+.customer-section {
+  padding: 2rem 0; }
