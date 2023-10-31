@@ -9381,8 +9381,11 @@ body {
 .text-green {
   color: #4CAF4F; }
 
-.text-d-grey {
+.text-dark-grey {
   color: #4D4D4D; }
+
+.text-light-grey {
+  color: #89939E; }
 
 .text-grey {
   color: #717171; }
