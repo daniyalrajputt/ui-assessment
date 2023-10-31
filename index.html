@@ -4,12 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Figma to HTML Ui Assessment for Sr. Ui Engineer">
     <link rel="stylesheet" href="styles/css/style.css">
+    <link rel="shortcut icon" href="assets/images/icon.svg" type="image/x-icon">
     <title>Figma to HTML</title>
 </head>
 
 <body>
     <main>
+        <!-- Header Start -->
         <header class="py-3 bg-light">
             <nav class="navbar navbar-expand-lg">
                 <div class="container">
@@ -22,7 +25,7 @@
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                        <div class="navbar-nav mx-auto">
+                        <div class="navbar-nav gap-3 mx-auto text-center text-lg-start">
                             <a class="nav-link active" href="#">Home</a>
                             <a class="nav-link" href="#">Service</a>
                             <a class="nav-link" href="#">Feature</a>
@@ -30,7 +33,7 @@
                             <a class="nav-link" href="#">Testimonial</a>
                             <a class="nav-link" href="#">FAQ</a>
                         </div>
-                        <div class="d-flex gap-3 align-items-center">
+                        <div class="d-flex gap-3 align-items-center justify-content-center mt-3 mt-lg-0">
                             <a class="btn btn-sm btn-transparent text-green" href="#">Login</a>
                             <a class="btn btn-sm btn-green py-2" href="#">Sign up</a>
                         </div>
@@ -38,29 +41,78 @@
                 </div>
             </nav>
         </header>
+        <!-- Header End -->
 
-
+        <!-- Hero Section Start -->
         <section class="hero-section bg-light">
-            <div class="container">
-                <div class="row align-items-center gy-5">
-                    <div class="col-lg-7 col-md-12 text-center text-lg-start">
-                        <h1 class="heading-1 text-dark-grey fw-bold">Lessons and insights
-                            <span class="text-green">from 8 years</span>
-                        </h1>
-                        <p class="text-grey">Where to grow your business as a photographer: site or social media?</p>
-                        <a href="#" class="btn btn-green btn-md">Register</a>
-                    </div>
-                    <div class="col-lg-5 col-md-12">
-                        <figure class="m-0">
-                            <img src="assets/images/banner-Illustration.png" class="img-fluid" alt="Illustration">
-                        </figure>
-                    </div>
+            <div id="hero-slider" class="carousel slide">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#hero-slider" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#hero-slider" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#hero-slider" data-bs-slide-to="2" aria-label="Slide 3"></button>
                 </div>
-            </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="container">
+                        <div class="row align-items-center gy-5">
+                            <div class="col-lg-7 col-md-12 text-center text-lg-start">
+                                <h1 class="heading-1 text-dark-grey fw-bold">Lessons and insights
+                                    <span class="text-green">from 8 years</span>
+                                </h1>
+                                <p class="text-grey">Where to grow your business as a photographer: site or social media?</p>
+                                <a href="#" class="btn btn-green btn-md">Register</a>
+                            </div>
+                            <div class="col-lg-5 col-md-12">
+                                <figure class="m-0 text-center">
+                                    <img src="assets/images/banner-Illustration.png" class="img-fluid" alt="Illustration">
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="container">
+                        <div class="row align-items-center gy-5">
+                            <div class="col-lg-7 col-md-12 text-center text-lg-start">
+                                <h1 class="heading-1 text-dark-grey fw-bold">Lessons and insights
+                                    <span class="text-green">from 8 years</span>
+                                </h1>
+                                <p class="text-grey">Where to grow your business as a photographer: site or social media?</p>
+                                <a href="#" class="btn btn-green btn-md">Register</a>
+                            </div>
+                            <div class="col-lg-5 col-md-12">
+                                <figure class="m-0 text-center">
+                                    <img src="assets/images/banner-Illustration.png" class="img-fluid" alt="Illustration">
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="container">
+                        <div class="row align-items-center gy-5">
+                            <div class="col-lg-7 col-md-12 text-center text-lg-start">
+                                <h1 class="heading-1 text-dark-grey fw-bold">Lessons and insights
+                                    <span class="text-green">from 8 years</span>
+                                </h1>
+                                <p class="text-grey">Where to grow your business as a photographer: site or social media?</p>
+                                <a href="#" class="btn btn-green btn-md">Register</a>
+                            </div>
+                            <div class="col-lg-5 col-md-12">
+                                <figure class="m-0 text-center">
+                                    <img src="assets/images/banner-Illustration.png" class="img-fluid" alt="Illustration">
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
         </section>
+        <!-- Hero Section End -->
 
-
-        <section class="client-section">
+        <!-- Our Client Section Start -->
+        <section class="py-5">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12 text-center">
@@ -69,24 +121,33 @@
                     </div>
                     <div class="col-md-12">
                         <ul
-                            class="list-unstyled p-0 m-0 d-flex align-items-center justify-content-lg-between justify-content-center flex-wrap">
-                            <li><img src="assets/images/client-logo-1.svg" alt="icon" class="img-fluid"></li>
-                            <li><img src="assets/images/client-logo-2.svg" alt="icon" class="img-fluid"></li>
-                            <li><img src="assets/images/client-logo-3.svg" alt="icon" class="img-fluid"></li>
-                            <li><img src="assets/images/client-logo-4.svg" alt="icon" class="img-fluid"></li>
-                            <li><img src="assets/images/client-logo-5.svg" alt="icon" class="img-fluid"></li>
-                            <li><img src="assets/images/client-logo-6.svg" alt="icon" class="img-fluid"></li>
-                            <li><img src="assets/images/client-logo-7.svg" alt="icon" class="img-fluid"></li>
+                            class="list-unstyled p-0 m-0 d-flex gap-3 align-items-center justify-content-lg-between justify-content-center flex-wrap">
+                            <li class="my-0 my-lg-4"><img src="assets/images/client-logo-1.svg" alt="icon"
+                                    class="img-fluid"></li>
+                            <li class="my-0 my-lg-4"><img src="assets/images/client-logo-2.svg" alt="icon"
+                                    class="img-fluid"></li>
+                            <li class="my-0 my-lg-4"><img src="assets/images/client-logo-3.svg" alt="icon"
+                                    class="img-fluid"></li>
+                            <li class="my-0 my-lg-4"><img src="assets/images/client-logo-4.svg" alt="icon"
+                                    class="img-fluid"></li>
+                            <li class="my-0 my-lg-4"><img src="assets/images/client-logo-5.svg" alt="icon"
+                                    class="img-fluid"></li>
+                            <li class="my-0 my-lg-4"><img src="assets/images/client-logo-6.svg" alt="icon"
+                                    class="img-fluid"></li>
+                            <li class="my-0 my-lg-4"><img src="assets/images/client-logo-7.svg" alt="icon"
+                                    class="img-fluid"></li>
                         </ul>
                     </div>
                 </div>
             </div>
         </section>
+        <!-- Our Client Section End -->
 
-        <section class="system-section">
+        <!-- System Section Start -->
+        <section class="py-5">
             <div class="container">
                 <div class="row justify-content-center">
-                    <div class="col-md-6 text-center">
+                    <div class="col-lg-6 col-md-12 text-center">
                         <h2 class="heading-2 text-dark-grey fw-semibold">Manage your entire community in a single system
                         </h2>
                         <p class="text-grey">Who is Nextcent suitable for?</p>
@@ -130,9 +191,10 @@
                 </div>
             </div>
         </section>
+        <!-- System Section End -->
 
-
-        <section class="section py-4">
+        <!-- Section Start -->
+        <section class="py-4">
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-lg-5 col-md-6 col-12">
@@ -140,7 +202,7 @@
                             <img src="assets/images/rafiki.png" alt="image" class="img-fluid">
                         </figure>
                     </div>
-                    <div class="col-lg-7 col-md-6 col-12">
+                    <div class="col-lg-7 col-md-6 col-12 text-center text-md-start">
                         <h2 class="heading-2 text-dark-grey fw-semibold">The unseen of spending three
                             <br class="d-none d-lg-block"> years at Pixelgrade
                         </h2>
@@ -154,8 +216,10 @@
                 </div>
             </div>
         </section>
+        <!-- Section End -->
 
 
+        <!-- Achievements Section Start -->
         <section class="achievements-section py-5 bg-light">
             <div class="container">
                 <div class="row justify-content-between align-items-center">
@@ -167,7 +231,7 @@
                     </div>
                     <div class="col-lg-6 col-md-6">
                         <div class="row gy-4">
-                            <div class="col-lg-6 col-md-12 col-sm-6 col-12">
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-6">
                                 <div class="count-box d-flex align-items-center gap-2">
                                     <figure class="flex-shrink-0">
                                         <img src="assets/images/count-1.png" alt="" class="img-fluid">
@@ -178,7 +242,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-6 col-md-12 col-sm-6 col-12">
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-6">
                                 <div class="count-box d-flex align-items-center gap-2">
                                     <figure class="flex-shrink-0">
                                         <img src="assets/images/count-2.png" alt="" class="img-fluid">
@@ -189,7 +253,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-6 col-md-12 col-sm-6 col-12">
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-6">
                                 <div class="count-box d-flex align-items-center gap-2">
                                     <figure class="flex-shrink-0">
                                         <img src="assets/images/count-3.png" alt="" class="img-fluid">
@@ -200,7 +264,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-6 col-md-12 col-sm-6 col-12">
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-6">
                                 <div class="count-box d-flex align-items-center gap-2">
                                     <figure class="flex-shrink-0">
                                         <img src="assets/images/count-4.png" alt="" class="img-fluid">
@@ -216,17 +280,18 @@
                 </div>
             </div>
         </section>
+        <!-- Achievements Section End -->
 
-
+        <!-- Section Start -->
         <section class="section py-5">
             <div class="container">
-                <div class="row align-items-center">
+                <div class="row align-items-center gy-4 gy-md-0">
                     <div class="col-lg-5 col-md-6 col-12">
                         <figure class="text-center">
                             <img src="assets/images/pana.png" alt="image" class="img-fluid">
                         </figure>
                     </div>
-                    <div class="col-lg-7 col-md-6 col-12">
+                    <div class="col-lg-7 col-md-6 col-12 text-center text-md-start">
                         <h2 class="heading-2 text-dark-grey fw-semibold">How to design your site footer like
                             <br class="d-none d-lg-block"> we did
                         </h2>
@@ -242,16 +307,18 @@
                 </div>
             </div>
         </section>
+        <!-- Section End -->
 
+        <!-- Customer Section Start -->
         <section class="bg-light py-3">
             <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-lg-4 col-md-6 col-12">
-                        <figure class="m-0">
-                            <img src="assets/images/customer.png" class="img-fluid w-100" alt="">
+                <div class="row align-items-center gy-lg-0 gy-4">
+                    <div class="col-lg-4 col-md-12 col-12">
+                        <figure class="m-0 text-center text-lg-start">
+                            <img src="assets/images/customer.png" class="img-fluid" alt="">
                         </figure>
                     </div>
-                    <div class="col-lg-8 col-md-12">
+                    <div class="col-lg-8 col-md-12 text-center text-lg-start">
                         <p class="text-grey text-md mb-3">Maecenas dignissim justo eget nulla rutrum molestie. Maecenas
                             lobortis sem dui, vel rutrum risus tincidunt ullamcorper. Proin eu enim metus. Vivamus sed
                             libero ornare, tristique quam in, gravida enim. Nullam ut molestie arcu, at hendrerit elit.
@@ -263,7 +330,7 @@
                         <h4 class="heading-4 fw-semibold text-green">Tim Smith</h4>
                         <p class="text-light-grey text-md fw-normal mb-4">British Dragon Boat Racing Association</p>
                         <ul
-                            class="list-unstyled d-flex align-items-center gap-4 p-0 m-0 justify-content-lg-between justify-content-center flex-wrap">
+                            class="list-unstyled d-flex align-items-center gap-4 p-0 m-0 justify-content-md-between justify-content-center flex-wrap">
                             <li><img src="assets/images/c-icon-1.svg" alt="" class="img-fluid"></li>
                             <li><img src="assets/images/c-icon-2.svg" alt="" class="img-fluid"></li>
                             <li><img src="assets/images/c-icon-3.svg" alt="" class="img-fluid"></li>
@@ -282,8 +349,9 @@
                 </div>
             </div>
         </section>
+        <!-- Customer Section End -->
 
-
+        <!-- Blog Section Start -->
         <section class="py-5">
             <div class="container">
                 <div class="row justify-content-center">
@@ -295,7 +363,7 @@
                     </div>
                 </div>
                 <div class="row gy-lg-0 gy-5">
-                    <div class="col-lg-4">
+                    <div class="col-lg-4 col-md-4 col-12">
                         <div class="blog-card">
                             <figure class="m-0">
                                 <img src="assets/images/blog-img-1.jpg" alt="blog image"
@@ -312,7 +380,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4">
+                    <div class="col-lg-4 col-md-4 col-12">
                         <div class="blog-card">
                             <figure class="m-0">
                                 <img src="assets/images/blog-img-2.jpg" alt="blog image"
@@ -329,7 +397,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4">
+                    <div class="col-lg-4 col-md-4 col-12">
                         <div class="blog-card">
                             <figure class="m-0">
                                 <img src="assets/images/blog-img-3.jpg" alt="blog image"
@@ -349,12 +417,13 @@
                 </div>
             </div>
         </section>
+        <!-- Blog Section End -->
 
-
+        <!-- Section Start -->
         <section class="py-5 bg-light">
             <div class="container">
                 <div class="row justify-content-center">
-                    <div class="col-md-8 text-center">
+                    <div class="col-lg-8 col-12 text-center">
                         <h2 class="heading-1 text-secondary fw-semibold mb-4">Pellentesque suscipit fringilla libero eu.
                         </h2>
                         <a href="#" class="btn btn-green btn-md fw-medium">Get a Demo
@@ -364,11 +433,12 @@
                 </div>
             </div>
         </section>
+        <!-- Section End -->
 
-
+        <!-- Footer Start -->
         <footer class="bg-secondary py-5">
             <div class="container">
-                <div class="row">
+                <div class="row gy-lg-0 gy-4">
                     <div class="col-lg-5">
                         <a href="#" class="d-block">
                             <img src="assets/images/footer-logo.svg" alt="logo" class="img-fluid">
@@ -386,28 +456,39 @@
                     <div class="col-lg-2">
                         <h4 class="heading-4 text-white fw-semibold mb-3">Company</h4>
                         <ul class="list-unstyled p-0">
-                            <li><a class="link-light text-sm text-decoration-none mb-2 d-inline-block" href="#">About us</a></li>
-                            <li><a class="link-light text-sm text-decoration-none mb-2 d-inline-block" href="#">Blog</a></li>
-                            <li><a class="link-light text-sm text-decoration-none mb-2 d-inline-block" href="#">Contact us</a></li>
-                            <li><a class="link-light text-sm text-decoration-none mb-2 d-inline-block" href="#">Pricing</a></li>
-                            <li><a class="link-light text-sm text-decoration-none mb-2 d-inline-block" href="#">Testimonials</a></li>
+                            <li><a class="link-light text-sm text-decoration-none mb-2 d-inline-block" href="#">About
+                                    us</a></li>
+                            <li><a class="link-light text-sm text-decoration-none mb-2 d-inline-block" href="#">Blog</a>
+                            </li>
+                            <li><a class="link-light text-sm text-decoration-none mb-2 d-inline-block" href="#">Contact
+                                    us</a></li>
+                            <li><a class="link-light text-sm text-decoration-none mb-2 d-inline-block"
+                                    href="#">Pricing</a></li>
+                            <li><a class="link-light text-sm text-decoration-none mb-2 d-inline-block"
+                                    href="#">Testimonials</a></li>
                         </ul>
                     </div>
                     <div class="col-lg-2">
                         <h4 class="heading-4 text-white fw-semibold mb-3">Support</h4>
                         <ul class="list-unstyled p-0">
-                            <li><a class="link-light text-sm text-decoration-none mb-2 d-inline-block" href="#">Help center</a></li>
-                            <li><a class="link-light text-sm text-decoration-none mb-2 d-inline-block" href="#">Terms of service</a></li>
-                            <li><a class="link-light text-sm text-decoration-none mb-2 d-inline-block" href="#">Legal</a></li>
-                            <li><a class="link-light text-sm text-decoration-none mb-2 d-inline-block" href="#">Privacy policy</a></li>
-                            <li><a class="link-light text-sm text-decoration-none mb-2 d-inline-block" href="#">Status</a></li>
+                            <li><a class="link-light text-sm text-decoration-none mb-2 d-inline-block" href="#">Help
+                                    center</a></li>
+                            <li><a class="link-light text-sm text-decoration-none mb-2 d-inline-block" href="#">Terms of
+                                    service</a></li>
+                            <li><a class="link-light text-sm text-decoration-none mb-2 d-inline-block"
+                                    href="#">Legal</a></li>
+                            <li><a class="link-light text-sm text-decoration-none mb-2 d-inline-block" href="#">Privacy
+                                    policy</a></li>
+                            <li><a class="link-light text-sm text-decoration-none mb-2 d-inline-block"
+                                    href="#">Status</a></li>
                         </ul>
                     </div>
                     <div class="col-lg-3">
                         <h4 class="heading-4 text-white fw-semibold mb-3">Stay up to date</h4>
                         <form action="">
                             <div class="input-group rounded-3">
-                                <input type="email" placeholder="Your email address" class="bg-transparent border-0 p-2">
+                                <input type="email" placeholder="Your email address"
+                                    class="bg-transparent border-0 p-2">
                                 <button class="btn bg-transparent">
                                     <img src="assets/images/send-icon.svg" alt="">
                                 </button>
@@ -417,6 +498,7 @@
                 </div>
             </div>
         </footer>
+        <!-- Footer End -->
 
     </main>
 

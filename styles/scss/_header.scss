@@ -1,0 +1,18 @@
+header {
+    .navbar {
+        .navbar-nav {
+            .nav-link {
+                color: $text-grey-900;
+                font-size: 1rem;
+                line-height: 1.5rem;
+                font-weight: 400;
+                display: inline-block;
+
+                &:hover,
+                &.active {
+                    color: $green;
+                }
+            }
+        }
+    }
+}

@@ -1,10 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 @import 'colors';
 @import "../../node_modules/bootstrap/scss/bootstrap";
-@import 'variables';
-@import 'typo';
 @import 'button';
-
+@import 'typo';
+@import 'header';
+@import 'system_card';
+@import 'blog_card';
+@import 'input';
 
 
 * {
@@ -15,27 +17,15 @@
 
 html {
     scroll-behavior: smooth;
+
+    @media(min-width: 768px) and (max-width: 1199px) {
+        font-size: 14px;
+    }
 }
 
 body {
     overflow-x: hidden;
     font-family: 'Inter', sans-serif;
-}
-
-.text-green {
-    color: $green;
-}
-
-.text-dark-grey {
-    color: $d-grey;
-}
-
-.text-light-grey {
-    color: $l-grey;
-}
-
-.text-grey {
-    color: $grey;
 }
 
 @media (min-width: 1400px) {
@@ -50,96 +40,30 @@ body {
     }
 }
 
-header {
-    background: $light;
-
-    .navbar {
-        .navbar-nav {
-            gap: 1rem;
-
-            .nav-link {
-                color: $text-grey-900;
-                font-size: 1rem;
-                line-height: 1.5rem;
-                font-weight: 400;
-                display: inline-block;
-            }
-        }
-    }
-}
-
 
 // Main Banner 
 .hero-section {
-    padding: 6rem 0;
-}
+    #hero-slider {
+        padding: 6rem 0;
 
-
-.client-section {
-    padding: 2.5rem 0;
-
-    ul {
-        gap: 0 1rem;
-
-        li {
-            margin: 1.5rem 0;
+        @media(max-width:991px) {
+            padding: 3rem 0;
         }
-    }
-}
 
+        .carousel-indicators {
+            button {
+                padding: 0;
+                width: 10px;
+                height: 10px;
+                opacity: 0.3;
+                background: $green;
+                border-radius: 50%;
+                border: 0;
 
-
-.system-section {
-    padding: 3.25rem 0;
-
-    .sys-card {
-        text-align: center;
-        display: flex;
-        padding: 1.5rem 2rem;
-        flex-direction: column;
-        align-items: center;
-        gap: 8px;
-        flex-shrink: 0;
-        border-radius: 8px;
-        background: $white;
-        box-shadow: 0px 2px 4px 0px rgba(171, 190, 209, 0.20);
-    }
-}
-
-.blog-card {
-    .content {
-        display: flex;
-        padding: 1rem;
-        flex-direction: column;
-        align-items: center;
-        gap: 1rem;
-        border-radius: 0.5rem;
-        background: $light;
-        margin: 0rem 1.5rem 0;
-        position: relative;
-        margin-top: -6rem;
-        box-shadow: 0px 8px 16px 0px rgba(171, 190, 209, 0.40);
-    }
-}
-
-
-.input-group {
-    background: rgba(255, 255, 255, 0.2);
-    flex-shrink: 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-    input {
-        outline: none;
-        color: $white;
-
-        &::placeholder {
-            color: #D9DBE1;
+                &.active {
+                    opacity: 1;
+                }
+            }
         }
-    }
-
-    button {
-        flex-shrink: 0;
     }
 }

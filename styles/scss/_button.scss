@@ -25,14 +25,32 @@
     border: 1px solid transparent;
 }
 
-
-.btn-green {
-    background: $green;
-    border-color: $green;
-    color: $white;
-
-    &:hover {
+.btn {
+    &.btn-green {
+        background: $green;
         border-color: $green;
-        color: $green;
+        color: $white;
+
+        &:hover {
+            border-color: $green;
+            color: $white;
+            background: $green;
+        }
+
+        &:focus {
+            border-color: $d-grey;
+            background: $green;
+        }
+
+        &:active {
+            background: $shade-2;
+            color: $white;
+        }
+
+        &:disabled {
+            background: $light;
+            color: $grey-blue;
+            border-color: $grey-blue;
+        }
     }
 }
