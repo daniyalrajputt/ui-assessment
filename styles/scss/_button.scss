@@ -1,18 +1,4 @@
-.btn-sm {
-    display: inline-flex;
-    padding: 0.5rem 1.5rem;
-    justify-content: center;
-    align-items: center;
-    gap: 0.5rem;
-    font-size: 0.875rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 1rem;
-    border-radius: 0.25rem;
-    border: 1px solid transparent;
-}
-
-.btn-md {
+.btn {
     display: inline-flex;
     padding: 0.875rem 2rem;
     justify-content: center;
@@ -20,37 +6,143 @@
     gap: 0.625rem;
     font-size: 1rem;
     font-weight: 500;
-    line-height: 1.5rem;
-    border-radius: 0.25rem;
+    line-height: 1;
+    border-radius: 0rem;
+    margin: 0 1rem;
+    text-transform: uppercase;
     border: 1px solid transparent;
-}
+    position: relative;
 
-.btn {
-    &.btn-green {
-        background: $green;
-        border-color: $green;
+    &::before {
+        content: '';
+        left: -0.75rem;
+        top: -5px;
+        bottom: -5px;
+        width: 10px;
+        position: absolute;
+        transition: 0.2S ease-in-out;
+        background: url(../../assets/images/bracket-left.svg) center left/contain no-repeat;
+    }
+
+    &::after {
+        content: '';
+        top: -5px;
+        bottom: -5px;
+        width: 10px;
+        right: -0.75rem;
+        position: absolute;
+        transition: 0.2S ease-in-out;
+        background: url(../../assets/images/bracket-right.svg) center right/contain no-repeat;
+    }
+
+    &:hover {
+        &::before{
+            transform: scale(1.25);
+        }
+        &::after{
+            transform: scale(1.25);
+        }
+    }
+
+    &.btn-primary {
+        background: $btn-primary;
         color: $white;
 
         &:hover {
-            border-color: $green;
             color: $white;
-            background: $green;
+            background: $primary;
         }
 
-        &:focus {
-            border-color: $d-grey;
-            background: $green;
-        }
+        &:focus {}
 
-        &:active {
-            background: $shade-2;
-            color: $white;
-        }
+        &:active {}
 
-        &:disabled {
-            background: $light;
-            color: $grey-blue;
-            border-color: $grey-blue;
-        }
+        &:disabled {}
     }
+
+
+    // .brace-left {
+    //     display: block;
+    //     min-height: 35px;
+    //     width: 0;
+    //     padding-right: 20px;
+    //     position: absolute;
+    //     left: -2rem;
+    //     top: 5px;
+    //     background-image: radial-gradient(circle at -0.2px 0, rgba(255, 255, 255, 0) 15px, $primary 15.5px, $primary 19px, rgba(255, 255, 255, 0) 19.5px), radial-gradient(circle at -0.2px 35px, rgba(255, 255, 255, 0) 15px, $primary 15.5px, $primary 19px, rgba(255, 255, 255, 0) 19.5px);
+    //     background-size: 20px 35px;
+    //     background-position: right center;
+    //     background-repeat: no-repeat;
+
+    //     &::before {
+    //         content: '';
+    //         width: 70%;
+    //         height: 50%;
+    //         border-left: 4px solid $primary;
+    //         border-top: 1px solid $primary;
+    //         border-top-left-radius: 30px;
+    //         position: absolute;
+    //         top: -15px;
+    //         left: 100%;
+    //         box-sizing: border-box;
+    //         margin-left: -5px;
+    //     }
+
+    //     &::after {
+    //         content: '';
+    //         width: 70%;
+    //         height: 50%;
+    //         border-left: 4px solid $primary;
+    //         border-bottom: 1px solid $primary;
+    //         border-bottom-left-radius: 30px;
+    //         position: absolute;
+    //         bottom: -15px;
+    //         left: 100%;
+    //         box-sizing: border-box;
+    //         margin-left: -5px;
+    //     }
+    // }
+
+
+    // .brace-right {
+    //     display: block;
+    //     min-height: 35px;
+    //     width: 0;
+    //     padding-left: 20px;
+    //     background-image: radial-gradient(circle at 20px 0, rgba(255, 255, 255, 0) 15px, $primary 15.5px, $primary 19px, rgba(255, 255, 255, 0) 19.5px), radial-gradient(circle at 20px 35px, rgba(255, 255, 255, 0) 15px, $primary 15.5px, $primary 19px, rgba(255, 255, 255, 0) 19.5px);
+    //     background-size: 20px 35px;
+    //     background-position: right center;
+    //     background-repeat: no-repeat;
+    //     position: absolute;
+    //     right: -2rem;
+    //     top: 5px;
+
+    //     &::before {
+    //         content: '';
+    //         width: 70%;
+    //         height: 50%;
+    //         border-right: 4px solid $primary;
+    //         border-top: 1px solid $primary;
+    //         border-top-right-radius: 30px;
+    //         position: absolute;
+    //         top: -15px;
+    //         left: 0;
+    //         box-sizing: border-box;
+    //         margin-left: -9px;
+    //     }
+
+    //     &::after {
+    //         content: '';
+    //         width: 70%;
+    //         height: 50%;
+    //         border-right: 4px solid $primary;
+    //         border-bottom: 1px solid $primary;
+    //         border-bottom-right-radius: 30px;
+    //         position: absolute;
+    //         bottom: -15px;
+    //         left: 0;
+    //         box-sizing: border-box;
+    //         margin-left: -9px;
+    //     }
+    // }
 }

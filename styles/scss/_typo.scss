@@ -1,19 +1,19 @@
-$inter: 'Inter', sans-serif;
+
 
 .heading-1 {
-    font-size: 4rem;
-    line-height: 1.1875;
-    font-family: $inter;
+    font-size: 5.875rem;
+    line-height: 1;
+    font-family: $raleway;
 
     @media(max-width:767px) {
-        font-size: 2rem;
+        font-size: 3.125rem;
     }
 }
 
 .heading-2 {
     font-size: 2.25rem;
     line-height: 1.2;
-    font-family: $inter;
+    font-family: $raleway;
 
     @media(max-width:767px) {
         font-size: 1.5rem;
@@ -23,7 +23,7 @@ $inter: 'Inter', sans-serif;
 .heading-3 {
     font-size: 1.75rem;
     line-height: 1.285;
-    font-family: $inter;
+    font-family: $raleway;
 
     @media(max-width:767px) {
         font-size: 1.375rem;
@@ -33,7 +33,7 @@ $inter: 'Inter', sans-serif;
 .heading-4 {
     font-size: 1.25rem;
     line-height: 1.4;
-    font-family: $inter;
+    font-family: $raleway;
 
     @media(max-width:767px) {
         font-size: 1rem;
@@ -41,7 +41,7 @@ $inter: 'Inter', sans-serif;
 }
 
 .text-lg {
-    font-family: $inter;
+    font-family: $raleway;
     font-size: 1.125rem;
     line-height: 28px;
 
@@ -51,7 +51,7 @@ $inter: 'Inter', sans-serif;
 }
 
 .text-md {
-    font-family: $inter;
+    font-family: $raleway;
     font-size: 1rem;
     line-height: 24px;
 
@@ -61,30 +61,14 @@ $inter: 'Inter', sans-serif;
 }
 
 .text-sm {
-    font-family: $inter;
+    font-family: $raleway;
     font-size: 0.875rem;
     line-height: 20px;
 }
 
 .text-xs {
-    font-family: $inter;
+    font-family: $raleway;
     font-size: 0.75rem;
     line-height: 16px;
 }
 
-
-.text-green {
-    color: $green;
-}
-
-.text-dark-grey {
-    color: $d-grey;
-}
-
-.text-light-grey {
-    color: $l-grey;
-}
-
-.text-grey {
-    color: $grey;
-}
