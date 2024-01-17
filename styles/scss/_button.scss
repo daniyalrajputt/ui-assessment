@@ -36,10 +36,11 @@
     }
 
     &:hover {
-        &::before{
+        &::before {
             transform: scale(1.25);
         }
-        &::after{
+
+        &::after {
             transform: scale(1.25);
         }
     }
@@ -60,89 +61,19 @@
         &:disabled {}
     }
 
+    &.btn-secondary {
+        background: $btn-secondary;
+        color: $white;
 
-    // .brace-left {
-    //     display: block;
-    //     min-height: 35px;
-    //     width: 0;
-    //     padding-right: 20px;
-    //     position: absolute;
-    //     left: -2rem;
-    //     top: 5px;
-    //     background-image: radial-gradient(circle at -0.2px 0, rgba(255, 255, 255, 0) 15px, $primary 15.5px, $primary 19px, rgba(255, 255, 255, 0) 19.5px), radial-gradient(circle at -0.2px 35px, rgba(255, 255, 255, 0) 15px, $primary 15.5px, $primary 19px, rgba(255, 255, 255, 0) 19.5px);
-    //     background-size: 20px 35px;
-    //     background-position: right center;
-    //     background-repeat: no-repeat;
+        &:hover {
+            color: $white;
+            background: $primary;
+        }
 
-    //     &::before {
-    //         content: '';
-    //         width: 70%;
-    //         height: 50%;
-    //         border-left: 4px solid $primary;
-    //         border-top: 1px solid $primary;
-    //         border-top-left-radius: 30px;
-    //         position: absolute;
-    //         top: -15px;
-    //         left: 100%;
-    //         box-sizing: border-box;
-    //         margin-left: -5px;
-    //     }
+        &:focus {}
 
-    //     &::after {
-    //         content: '';
-    //         width: 70%;
-    //         height: 50%;
-    //         border-left: 4px solid $primary;
-    //         border-bottom: 1px solid $primary;
-    //         border-bottom-left-radius: 30px;
-    //         position: absolute;
-    //         bottom: -15px;
-    //         left: 100%;
-    //         box-sizing: border-box;
-    //         margin-left: -5px;
-    //     }
-    // }
+        &:active {}
 
-
-    // .brace-right {
-    //     display: block;
-    //     min-height: 35px;
-    //     width: 0;
-    //     padding-left: 20px;
-    //     background-image: radial-gradient(circle at 20px 0, rgba(255, 255, 255, 0) 15px, $primary 15.5px, $primary 19px, rgba(255, 255, 255, 0) 19.5px), radial-gradient(circle at 20px 35px, rgba(255, 255, 255, 0) 15px, $primary 15.5px, $primary 19px, rgba(255, 255, 255, 0) 19.5px);
-    //     background-size: 20px 35px;
-    //     background-position: right center;
-    //     background-repeat: no-repeat;
-    //     position: absolute;
-    //     right: -2rem;
-    //     top: 5px;
-
-    //     &::before {
-    //         content: '';
-    //         width: 70%;
-    //         height: 50%;
-    //         border-right: 4px solid $primary;
-    //         border-top: 1px solid $primary;
-    //         border-top-right-radius: 30px;
-    //         position: absolute;
-    //         top: -15px;
-    //         left: 0;
-    //         box-sizing: border-box;
-    //         margin-left: -9px;
-    //     }
-
-    //     &::after {
-    //         content: '';
-    //         width: 70%;
-    //         height: 50%;
-    //         border-right: 4px solid $primary;
-    //         border-bottom: 1px solid $primary;
-    //         border-bottom-right-radius: 30px;
-    //         position: absolute;
-    //         bottom: -15px;
-    //         left: 0;
-    //         box-sizing: border-box;
-    //         margin-left: -9px;
-    //     }
-    // }
+        &:disabled {}
+    }
 }

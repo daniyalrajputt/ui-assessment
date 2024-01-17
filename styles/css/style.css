@@ -9356,6 +9356,12 @@ body {
     .btn.btn-primary:hover {
       color: #FFFFFF;
       background: #8491FF; }
+  .btn.btn-secondary {
+    background: #62BCFC;
+    color: #FFFFFF; }
+    .btn.btn-secondary:hover {
+      color: #FFFFFF;
+      background: #8491FF; }
 
 .heading-1 {
   font-size: 5.875rem;
