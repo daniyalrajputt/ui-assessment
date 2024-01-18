@@ -9314,6 +9314,9 @@ body {
   .container-xxl {
     max-width: 1320px; } }
 
+.text-light {
+  color: #BFBFBF; }
+
 .btn {
   display: inline-flex;
   padding: 0.875rem 2rem;
@@ -9448,3 +9451,24 @@ header .navbar .navbar-nav .nav-link {
 
 .hero-section figure img {
   margin-bottom: -1rem; }
+
+.about_section {
+  background: url(../../assets/images/about-laptop.png) right bottom/650px no-repeat;
+  position: relative; }
+  .about_section .bulb {
+    position: absolute;
+    right: 10rem;
+    top: 0;
+    max-width: 200px; }
+  .about_section .icons_wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1rem; }
+    .about_section .icons_wrapper span {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      flex: 1 0 calc(25% - 0.75rem);
+      color: #FFFFFF;
+      font-size: 1.125rem; }

@@ -5,3 +5,31 @@
         }
     }
 }
+
+.about_section {
+    background: url(../../assets/images/about-laptop.png) right bottom/650px no-repeat;
+    position: relative;
+
+    .bulb {
+        position: absolute;
+        right: 10rem;
+        top: 0;
+        max-width: 200px;
+    }
+
+    .icons_wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 1rem;
+
+        span {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            flex: 1 0 calc(25% - 0.75rem);
+            color: $white;
+            font-size: 1.125rem;
+        }
+    }
+}
