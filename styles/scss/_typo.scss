@@ -49,6 +49,19 @@
     transform: scale(-1);
     white-space: nowrap;
     writing-mode: vertical-rl;
+    color: $white;
+    font-size: 5.875rem;
+    line-height: 1;
+    font-family: $raleway;
+
+    &.right {
+        left: auto;
+        right: 3rem;
+    }
+
+    @media(max-width:767px) {
+        font-size: 3.125rem;
+    }
 }
 
 .text-xxl {

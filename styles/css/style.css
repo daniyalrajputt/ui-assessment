@@ -9408,7 +9408,17 @@ body {
   position: absolute;
   transform: scale(-1);
   white-space: nowrap;
-  writing-mode: vertical-rl; }
+  writing-mode: vertical-rl;
+  color: #FFFFFF;
+  font-size: 5.875rem;
+  line-height: 1;
+  font-family: "Raleway", sans-serif; }
+  .abs-heading.right {
+    left: auto;
+    right: 3rem; }
+  @media (max-width: 767px) {
+    .abs-heading {
+      font-size: 3.125rem; } }
 
 .text-xxl {
   font-family: "Raleway", sans-serif;
