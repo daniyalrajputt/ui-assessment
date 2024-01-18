@@ -9,6 +9,7 @@
 .about_section {
     background: url(../../assets/images/about-laptop.png) right bottom/650px no-repeat;
     position: relative;
+    padding: 6rem 0;
 
     .bulb {
         position: absolute;
@@ -30,6 +31,51 @@
             flex: 1 0 calc(25% - 0.75rem);
             color: $white;
             font-size: 1.125rem;
+        }
+    }
+}
+
+
+.service_section {
+    padding: 6rem 0;
+
+    .service-card {
+        figure {
+            border-radius: 20px;
+            overflow: hidden;
+            position: relative;
+            z-index: 1;
+
+            img {
+                width: 100%;
+                border-radius: 20px;
+                transition: 0.3s ease-in-out;
+            }
+        }
+
+        .content {
+            padding: 3.5rem 2rem 2rem;
+            margin-top: -2.5rem;
+            background: #020735;
+            border-radius: 20px;
+            transition: 0.3s ease-in-out;
+
+            p {
+                color: $grey;
+                margin: 0;
+            }
+        }
+
+        &:hover {
+            figure {
+                img {
+                    transform: scale(1.125) rotate(3deg);
+                }
+            }
+
+            .content {
+                transform: translateY(10px);
+            }
         }
     }
 }

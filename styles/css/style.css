@@ -9383,8 +9383,8 @@ body {
       font-size: 1.5rem; } }
 
 .heading-3 {
-  font-size: 1.75rem;
-  line-height: 1.285;
+  font-size: 1.875rem;
+  line-height: 1.2;
   font-family: "Raleway", sans-serif; }
   @media (max-width: 767px) {
     .heading-3 {
@@ -9397,6 +9397,34 @@ body {
   @media (max-width: 767px) {
     .heading-4 {
       font-size: 1rem; } }
+
+.abs-heading {
+  top: 0;
+  bottom: 0;
+  left: 3rem;
+  opacity: 0.2;
+  font-size: 5rem;
+  font-weight: 400;
+  position: absolute;
+  transform: scale(-1);
+  white-space: nowrap;
+  writing-mode: vertical-rl; }
+
+.text-xxl {
+  font-family: "Raleway", sans-serif;
+  font-size: 1.375rem;
+  line-height: 1.2; }
+  @media (max-width: 767px) {
+    .text-xxl {
+      font-size: 1.25rem; } }
+
+.text-xl {
+  font-family: "Raleway", sans-serif;
+  font-size: 1.25rem;
+  line-height: 1.5; }
+  @media (max-width: 767px) {
+    .text-xl {
+      font-size: 1.125rem; } }
 
 .text-lg {
   font-family: "Raleway", sans-serif;
@@ -9454,7 +9482,8 @@ header .navbar .navbar-nav .nav-link {
 
 .about_section {
   background: url(../../assets/images/about-laptop.png) right bottom/650px no-repeat;
-  position: relative; }
+  position: relative;
+  padding: 6rem 0; }
   .about_section .bulb {
     position: absolute;
     right: 10rem;
@@ -9472,3 +9501,28 @@ header .navbar .navbar-nav .nav-link {
       flex: 1 0 calc(25% - 0.75rem);
       color: #FFFFFF;
       font-size: 1.125rem; }
+
+.service_section {
+  padding: 6rem 0; }
+  .service_section .service-card figure {
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+    z-index: 1; }
+    .service_section .service-card figure img {
+      width: 100%;
+      border-radius: 20px;
+      transition: 0.3s ease-in-out; }
+  .service_section .service-card .content {
+    padding: 3.5rem 2rem 2rem;
+    margin-top: -2.5rem;
+    background: #020735;
+    border-radius: 20px;
+    transition: 0.3s ease-in-out; }
+    .service_section .service-card .content p {
+      color: #BBBBBB;
+      margin: 0; }
+  .service_section .service-card:hover figure img {
+    transform: scale(1.125) rotate(3deg); }
+  .service_section .service-card:hover .content {
+    transform: translateY(10px); }

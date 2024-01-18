@@ -1,5 +1,3 @@
-
-
 .heading-1 {
     font-size: 5.875rem;
     line-height: 1;
@@ -21,8 +19,8 @@
 }
 
 .heading-3 {
-    font-size: 1.75rem;
-    line-height: 1.285;
+    font-size: 1.875rem;
+    line-height: 1.2;
     font-family: $raleway;
 
     @media(max-width:767px) {
@@ -37,6 +35,39 @@
 
     @media(max-width:767px) {
         font-size: 1rem;
+    }
+}
+
+.abs-heading {
+    top: 0;
+    bottom: 0;
+    left: 3rem;
+    opacity: 0.2;
+    font-size: 5rem;
+    font-weight: 400;
+    position: absolute;
+    transform: scale(-1);
+    white-space: nowrap;
+    writing-mode: vertical-rl;
+}
+
+.text-xxl {
+    font-family: $raleway;
+    font-size: 1.375rem;
+    line-height: 1.2;
+
+    @media(max-width:767px) {
+        font-size: 1.25rem;
+    }
+}
+
+.text-xl {
+    font-family: $raleway;
+    font-size: 1.25rem;
+    line-height: 1.5;
+
+    @media(max-width:767px) {
+        font-size: 1.125rem;
     }
 }
 
@@ -71,4 +102,3 @@
     font-size: 0.75rem;
     line-height: 16px;
 }
-
