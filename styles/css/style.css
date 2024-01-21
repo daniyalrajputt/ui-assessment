@@ -9465,6 +9465,10 @@ body {
 .text-gray {
   color: #BBBBBB; }
 
+@media (max-width: 991px) {
+  header .navbar {
+    text-align: center; } }
+
 header .navbar .navbar-nav .nav-link {
   color: #FFFFFF;
   font-size: 1rem;
@@ -9475,8 +9479,8 @@ header .navbar .navbar-nav .nav-link {
   header .navbar .navbar-nav .nav-link:hover, header .navbar .navbar-nav .nav-link.active {
     color: #8491FF; }
 
-header .navbar .navbar-toggler {
-  filter: brightness(100) invert(1); }
+header .navbar .navbar-toggler .navbar-toggler-icon {
+  filter: brightness(100) invert(0); }
 
 .input-group {
   background: rgba(255, 255, 255, 0.2);
@@ -9604,29 +9608,27 @@ section {
           section.education_section .swiper-slide .edu-card p span {
             font-size: 1.125rem;
             margin-top: 0.5rem; }
-      section.education_section .swiper-slide.swiper-slide-active {
-        padding: 1rem 0; }
-        section.education_section .swiper-slide.swiper-slide-active .edu-card {
-          box-shadow: 0 0 20px #62BCFC;
-          position: relative; }
-          section.education_section .swiper-slide.swiper-slide-active .edu-card::before {
-            content: '';
-            left: -1.25rem;
-            top: -0.25rem;
-            bottom: -0.25rem;
-            width: 40px;
-            position: absolute;
-            transition: 0.2S ease-in-out;
-            background: url(../../assets/images/left.svg) center left/contain no-repeat; }
-          section.education_section .swiper-slide.swiper-slide-active .edu-card::after {
-            content: '';
-            top: -0.25rem;
-            bottom: -0.25rem;
-            width: 40px;
-            right: -1.25rem;
-            position: absolute;
-            transition: 0.2S ease-in-out;
-            background: url(../../assets/images/right.svg) center right/contain no-repeat; }
+      section.education_section .swiper-slide.swiper-slide-active .edu-card {
+        box-shadow: 0 0 20px #62BCFC;
+        position: relative; }
+        section.education_section .swiper-slide.swiper-slide-active .edu-card::before {
+          content: '';
+          left: -1.25rem;
+          top: -0.25rem;
+          bottom: -0.25rem;
+          width: 40px;
+          position: absolute;
+          transition: 0.2S ease-in-out;
+          background: url(../../assets/images/left.svg) center left/contain no-repeat; }
+        section.education_section .swiper-slide.swiper-slide-active .edu-card::after {
+          content: '';
+          top: -0.25rem;
+          bottom: -0.25rem;
+          width: 40px;
+          right: -1.25rem;
+          position: absolute;
+          transition: 0.2S ease-in-out;
+          background: url(../../assets/images/right.svg) center right/contain no-repeat; }
   section.testimonial_section .swiper-slide {
     padding: 1.25rem 0; }
     section.testimonial_section .swiper-slide .testimonial-card {

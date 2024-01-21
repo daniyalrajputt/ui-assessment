@@ -1,5 +1,9 @@
 header {
     .navbar {
+        @include breakpoint(medium) {
+            text-align: center;
+        }
+
         .navbar-nav {
             .nav-link {
                 color: $white;
@@ -17,7 +21,9 @@ header {
         }
 
         .navbar-toggler {
-            filter: brightness(100) invert(1);
+            .navbar-toggler-icon {
+                filter: brightness(100) invert(0);
+            }
         }
     }
 }
