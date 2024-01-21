@@ -1,9 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 @import 'colors';
 @import "../../node_modules/bootstrap/scss/bootstrap";
+@import "../scss/fontawesome.min.css";
+@import "../scss/swiper-bundle.min.css";
 @import 'reset';
 @import 'button';
 @import 'typo';
 @import 'header';
 @import 'input';
 @import 'common';
+@import 'footer';

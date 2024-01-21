@@ -1,0 +1,35 @@
+footer {
+    .footer-links {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0;
+        gap: 1rem;
+
+        li {
+            a {
+                gap: 1rem;
+                display: flex;
+                align-items: center;
+                text-decoration: none;
+
+                img {
+                    flex-shrink: 0;
+                }
+
+                h3 {
+                    color: $primary;
+                }
+
+                p {
+                    flex-shrink: 0;
+
+                    span {
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+}

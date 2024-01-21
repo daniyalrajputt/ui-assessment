@@ -15,5 +15,9 @@ header {
                 }
             }
         }
+
+        .navbar-toggler {
+            filter: brightness(100) invert(1);
+        }
     }
 }
