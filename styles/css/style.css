@@ -9469,6 +9469,10 @@ body {
   header .navbar {
     text-align: center; } }
 
+@media (max-width: 1199px) {
+  header .navbar .navbar-brand img {
+    max-width: 200px; } }
+
 header .navbar .navbar-nav .nav-link {
   color: #FFFFFF;
   font-size: 1rem;
@@ -9479,8 +9483,16 @@ header .navbar .navbar-nav .nav-link {
   header .navbar .navbar-nav .nav-link:hover, header .navbar .navbar-nav .nav-link.active {
     color: #8491FF; }
 
+@media (max-width: 1199px) {
+  header .navbar .navbar-nav {
+    gap: 0.125rem !important; } }
+
 header .navbar .navbar-toggler .navbar-toggler-icon {
   filter: brightness(100) invert(0); }
+
+@media (max-width: 1199px) {
+  header .navbar .btn {
+    padding: 0.875rem 1.25rem; } }
 
 .input-group {
   background: rgba(255, 255, 255, 0.2);
@@ -9497,8 +9509,18 @@ header .navbar .navbar-toggler .navbar-toggler-icon {
   .input-group button {
     flex-shrink: 0; }
 
+@media (max-width: 1199px) {
+  .hero-section figure {
+    text-align: center; } }
+
 .hero-section figure img {
   margin-bottom: -1rem; }
+  @media (max-width: 1199px) {
+    .hero-section figure img {
+      max-width: 500px; } }
+  @media (max-width: 767px) {
+    .hero-section figure img {
+      max-width: 100%; } }
 
 section {
   padding: 6rem 0;
@@ -9506,11 +9528,15 @@ section {
   section.about_section {
     background: url(../../assets/images/about-laptop.png) right bottom/650px no-repeat;
     position: relative; }
+    @media (max-width: 991px) {
+      section.about_section {
+        background: none; } }
     section.about_section .bulb {
       position: absolute;
       right: 10rem;
       top: 0;
-      max-width: 200px; }
+      max-width: 200px;
+      z-index: -1; }
     section.about_section .icons_wrapper {
       display: flex;
       flex-wrap: wrap;
@@ -9523,6 +9549,9 @@ section {
         flex: 1 0 calc(25% - 0.75rem);
         color: #FFFFFF;
         font-size: 1.125rem; }
+        @media (max-width: 767px) {
+          section.about_section .icons_wrapper span {
+            flex: 1 0 100px; } }
   section.service_section .service-card figure {
     border-radius: 20px;
     overflow: hidden;

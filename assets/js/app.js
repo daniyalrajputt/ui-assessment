@@ -12,6 +12,9 @@ var experience_swiper = new Swiper(".experience-card-slider", {
             slidesPerView: 2,
         },
         1024: {
+            slidesPerView: 3,
+        },
+        1199: {
             slidesPerView: 4,
         },
     },

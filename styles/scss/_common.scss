@@ -1,7 +1,19 @@
 .hero-section {
     figure {
+        @include breakpoint(large) {
+            text-align: center;
+        }
+
         img {
             margin-bottom: -1rem;
+
+            @include breakpoint(large) {
+                max-width: 500px;
+            }
+
+            @include breakpoint(small) {
+                max-width: 100%;
+            }
         }
     }
 }
@@ -14,11 +26,16 @@ section {
         background: url(../../assets/images/about-laptop.png) right bottom/650px no-repeat;
         position: relative;
 
+        @include breakpoint(medium) {
+            background: none;
+        }
+
         .bulb {
             position: absolute;
             right: 10rem;
             top: 0;
             max-width: 200px;
+            z-index: -1;
         }
 
         .icons_wrapper {
@@ -34,6 +51,10 @@ section {
                 flex: 1 0 calc(25% - 0.75rem);
                 color: $white;
                 font-size: 1.125rem;
+
+                @include breakpoint(small) {
+                    flex: 1 0 100px;
+                }
             }
         }
     }

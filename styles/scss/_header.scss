@@ -4,6 +4,14 @@ header {
             text-align: center;
         }
 
+        .navbar-brand {
+            img {
+                @include breakpoint(large) {
+                    max-width: 200px;
+                }
+            }
+        }
+
         .navbar-nav {
             .nav-link {
                 color: $white;
@@ -18,11 +26,21 @@ header {
                     color: $primary;
                 }
             }
+
+            @include breakpoint(large) {
+                gap: 0.125rem !important;
+            }
         }
 
         .navbar-toggler {
             .navbar-toggler-icon {
                 filter: brightness(100) invert(0);
+            }
+        }
+
+        .btn {
+            @include breakpoint(large) {
+                padding: 0.875rem 1.25rem;
             }
         }
     }
