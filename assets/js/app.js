@@ -32,7 +32,7 @@ var education_swiper = new Swiper(".education-card-slider", {
     // },
     breakpoints: {
         640: {
-            slidesPerView: 2,
+            slidesPerView: 1.5,
         },
         1024: {
             slidesPerView: 3,
@@ -43,7 +43,7 @@ var education_swiper = new Swiper(".education-card-slider", {
 
 var testimonial_swiper = new Swiper(".testimonial-card-slider", {
     slidesPerView: 1,
-    spaceBetween: 30,
+    spaceBetween: 20,
     centeredSlides: true,
     loop: true,
     loopedSlides: 10,
@@ -53,7 +53,7 @@ var testimonial_swiper = new Swiper(".testimonial-card-slider", {
     // },
     breakpoints: {
         640: {
-            slidesPerView: 2,
+            slidesPerView: 1.5,
         },
         1024: {
             slidesPerView: 3,
@@ -130,7 +130,8 @@ var blog_swiper = new Swiper(".blog-card-slider", {
     // },
     breakpoints: {
         640: {
-            slidesPerView: 2,
+            slidesPerView: 1.5,
+            centeredSlides: true,
         },
         768: {
             slidesPerView: 2,

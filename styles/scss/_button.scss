@@ -54,11 +54,10 @@
             background: $primary;
         }
 
-        &:focus {}
-
-        &:active {}
-
-        &:disabled {}
+        &:disabled {
+            background: $lightgrey;
+            opacity: 0.6;
+        }
     }
 
     &.btn-secondary {
@@ -70,10 +69,13 @@
             background: $primary;
         }
 
-        &:focus {}
+        &:disabled {
+            background: $lightgrey;
+            opacity: 0.6;
+        }
+    }
 
-        &:active {}
-
-        &:disabled {}
+    @include breakpoint(small) {
+        padding: 0.875rem 1rem;
     }
 }
