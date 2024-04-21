@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Nehal Abubakar Portfolio">
+    <link rel="stylesheet" href="styles/css/slick.min.css">
+    <link rel="stylesheet" href="styles/css/slick-theme.min.css">
+    <link rel="stylesheet" href="styles/css/jquery.fancybox.min.css">
     <link rel="stylesheet" href="styles/css/style.css">
     <link rel="shortcut icon" href="assets/images/icon.svg" type="image/x-icon">
     <title>Nehal Abubakar | Portfolio</title>
@@ -68,6 +71,11 @@
                         </figure>
                     </div>
                 </div>
+                <ul class="social-io">
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">Instagram</a></li>
+                </ul>
             </div>
         </section>
         <!-- Hero Section End -->
@@ -238,52 +246,48 @@
                     </div>
 
                     <div class="col-lg-12">
-                        <div class="swiper project_slider_left">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide">
-                                    <div class="project_card">
-                                        <img src="assets/images/project-1.jpg" alt="" class="img-fluid w-100">
-                                    </div>
+                        <div class="project_slider_left">
+                            <div class="px-3">
+                                <div class="project_card" data-fancybox="portfolio" href="assets/images/project-1.jpg">
+                                    <img src="assets/images/project-1.jpg" alt="" class="img-fluid w-100">
                                 </div>
-                                <div class="swiper-slide">
-                                    <div class="project_card">
-                                        <img src="assets/images/project-2.jpg" alt="" class="img-fluid w-100">
-                                    </div>
+                            </div>
+                            <div class="px-3">
+                                <div class="project_card" data-fancybox="portfolio" href="assets/images/project-2.jpg">
+                                    <img src="assets/images/project-2.jpg" alt="" class="img-fluid w-100">
                                 </div>
-                                <div class="swiper-slide">
-                                    <div class="project_card">
-                                        <img src="assets/images/project-3.jpg" alt="" class="img-fluid w-100">
-                                    </div>
+                            </div>
+                            <div class="px-3">
+                                <div class="project_card" data-fancybox="portfolio" href="assets/images/project-3.jpg">
+                                    <img src="assets/images/project-3.jpg" alt="" class="img-fluid w-100">
                                 </div>
-                                <div class="swiper-slide">
-                                    <div class="project_card">
-                                        <img src="assets/images/project-3.jpg" alt="" class="img-fluid w-100">
-                                    </div>
+                            </div>
+                            <div class="px-3">
+                                <div class="project_card" data-fancybox="portfolio" href="assets/images/project-3.jpg">
+                                    <img src="assets/images/project-3.jpg" alt="" class="img-fluid w-100">
                                 </div>
                             </div>
                         </div>
 
-                        <div class="swiper project_slider_right mt-5">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide">
-                                    <div class="project_card">
-                                        <img src="assets/images/project-4.jpg" alt="" class="img-fluid w-100">
-                                    </div>
+                        <div class="project_slider_right mt-5" dir="rtl">
+                            <div class="px-3">
+                                <div class="project_card" data-fancybox="portfolio" href="assets/images/project-4.jpg">
+                                    <img src="assets/images/project-4.jpg" alt="" class="img-fluid w-100">
                                 </div>
-                                <div class="swiper-slide">
-                                    <div class="project_card">
-                                        <img src="assets/images/project-5.jpg" alt="" class="img-fluid w-100">
-                                    </div>
+                            </div>
+                            <div class="px-3">
+                                <div class="project_card" data-fancybox="portfolio" href="assets/images/project-5.jpg">
+                                    <img src="assets/images/project-5.jpg" alt="" class="img-fluid w-100">
                                 </div>
-                                <div class="swiper-slide">
-                                    <div class="project_card">
-                                        <img src="assets/images/project-6.jpg" alt="" class="img-fluid w-100">
-                                    </div>
+                            </div>
+                            <div class="px-3">
+                                <div class="project_card" data-fancybox="portfolio" href="assets/images/project-6.jpg">
+                                    <img src="assets/images/project-6.jpg" alt="" class="img-fluid w-100">
                                 </div>
-                                <div class="swiper-slide">
-                                    <div class="project_card">
-                                        <img src="assets/images/project-6.jpg" alt="" class="img-fluid w-100">
-                                    </div>
+                            </div>
+                            <div class="px-3">
+                                <div class="project_card" data-fancybox="portfolio" href="assets/images/project-6.jpg">
+                                    <img src="assets/images/project-6.jpg" alt="" class="img-fluid w-100">
                                 </div>
                             </div>
                         </div>
@@ -310,39 +314,41 @@
                     </div>
 
                     <div class="col-md-12 px-md-5">
-                        <div class="swiper experience-card-slider">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide">
-                                    <div class="exp-card">
-                                        <img src="assets/images/exp-1.svg" alt="icon" class="img-fluid">
-                                        <h4 class="text-white">Wordpress/PHP Developer</h4>
-                                        <p class="text-white">KandN's <span class="d-block">February 2022 -
-                                                Present</span></p>
-                                    </div>
+                        <div class="experience-slider">
+                            <div class="exp-card">
+                                <span>February 2022 - Present</span>
+                                <div class="content">
+                                    <h4 class="text-white">Wordpress/PHP Developer</h4>
+                                    <h5 class="text-white">KandN's</h5>
+                                    <p class="text-white">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
+                                        possimus praesentium, similique voluptatibus eum tempore fugit.</p>
                                 </div>
-                                <div class="swiper-slide">
-                                    <div class="exp-card">
-                                        <img src="assets/images/exp-2.svg" alt="icon" class="img-fluid">
-                                        <h4 class="text-white">Lead Developer</h4>
-                                        <p class="text-white">BSY Enterprises<span class="d-block">August 2021 - January
-                                                2022</span></p>
-                                    </div>
+                            </div>
+                            <div class="exp-card">
+                                <span>August 2021 - January 2022</span>
+                                <div class="content">
+                                    <h4 class="text-white">Lead Developer</h4>
+                                    <h5 class="text-white">BSY Enterprises</h5>
+                                    <p class="text-white">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
+                                        possimus praesentium, similique voluptatibus eum tempore fugit.</p>
                                 </div>
-                                <div class="swiper-slide">
-                                    <div class="exp-card">
-                                        <img src="assets/images/exp-3.svg" alt="icon" class="img-fluid">
-                                        <h4 class="text-white">Junior Web Developer</h4>
-                                        <p class="text-white">Twin World Technologies<span class="d-block">July 2019 -
-                                                March 2021</span></p>
-                                    </div>
+                            </div>
+                            <div class="exp-card">
+                                <span>July 2019 - March 2021</span>
+                                <div class="content">
+                                    <h4 class="text-white">Junior Web Developer</h4>
+                                    <h5 class="text-white">Twin World Technologies</h5>
+                                    <p class="text-white">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
+                                        possimus praesentium, similique voluptatibus eum tempore fugit.</p>
                                 </div>
-                                <div class="swiper-slide">
-                                    <div class="exp-card">
-                                        <img src="assets/images/exp-4.svg" alt="icon" class="img-fluid">
-                                        <h4 class="text-white">Freelancer As A Web Designer & Developer</h4>
-                                        <p class="text-white">Fiverr.com, freelancer.com, guru.com, upwork.com<span
-                                                class="d-block">July 2018 - Present</span></p>
-                                    </div>
+                            </div>
+                            <div class="exp-card">
+                                <span>July 2018 - Present</span>
+                                <div class="content">
+                                    <h4 class="text-white">Freelancer As A <br /> Web Designer & Developer</h4>
+                                    <h5 class="text-white">Fiverr.com, freelancer.com, guru.com, upwork.com</h5>
+                                    <p class="text-white">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
+                                        possimus praesentium, similique voluptatibus eum tempore fugit.</p>
                                 </div>
                             </div>
                         </div>
@@ -414,10 +420,12 @@
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
                                     <div class="testimonial-card">
-                                        <p class="text-gray text-lg fw-normal">Fantastic work! I am just impressed by
+                                        <p class="text-gray text-lg fw-normal description">Fantastic work! I am just
+                                            impressed by
                                             his service, quality and working
                                             strategy. I hired him for the development of my online store and he has
                                             satisfied me to...</p>
+                                        <button class="text-gray text-lg fw-normal show-more">Show More</button>
                                         <div class="user-info d-flex align-items-center justify-content-between gap-4">
                                             <h3 class="text-xxl text-primary fw-bold mb-0">Michelle Rothstein
                                                 <span class="text-md fw-normal d-block text-white">DC Stone Pizza</span>
@@ -430,10 +438,12 @@
                                 </div>
                                 <div class="swiper-slide">
                                     <div class="testimonial-card">
-                                        <p class="text-gray text-lg fw-normal">Fantastic work! I am just impressed by
+                                        <p class="text-gray text-lg fw-normal description">Fantastic work! I am just
+                                            impressed by
                                             his service, quality and working
                                             strategy. I hired him for the development of my online store and he has
                                             satisfied me to...</p>
+                                        <button class="text-gray text-lg fw-normal show-more">Show More</button>
                                         <div class="user-info d-flex align-items-center justify-content-between gap-4">
                                             <h3 class="text-xxl text-primary fw-bold mb-0">Lorena Barese
                                                 <span class="text-md fw-normal d-block text-white">Perennial Poet</span>
@@ -446,10 +456,12 @@
                                 </div>
                                 <div class="swiper-slide">
                                     <div class="testimonial-card">
-                                        <p class="text-gray text-lg fw-normal">Fantastic work! I am just impressed by
+                                        <p class="text-gray text-lg fw-normal description">Fantastic work! I am just
+                                            impressed by
                                             his service, quality and working
                                             strategy. I hired him for the development of my online store and he has
                                             satisfied me to...</p>
+                                        <button class="text-gray text-lg fw-normal show-more">Show More</button>
                                         <div class="user-info d-flex align-items-center justify-content-between gap-4">
                                             <h3 class="text-xxl text-primary fw-bold mb-0">Tony Addison
                                                 <span class="text-md fw-normal d-block text-white">Mirror World</span>
@@ -648,8 +660,10 @@
 
     </main>
 
-    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/jquery-3.5.1.min.js"></script>
+    <script src="assets/js/jquery.fancybox.min.js"></script>
+    <script src="assets/js/slick.min.js"></script>
     <script src="assets/js/swiper-bundle.min.js"></script>
     <script src="assets/js/app.js"></script>
 </body>
