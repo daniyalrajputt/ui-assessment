@@ -9797,6 +9797,59 @@ section {
           padding: 0.75rem; } }
       section.testimonial_section .swiper-slide.swiper-slide-active .testimonial-card {
         box-shadow: 0 0 20px #62BCFC; }
+  section.industries_section .wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem 0; }
+    section.industries_section .wrapper-card {
+      flex: 0 0 20%;
+      padding: 0 10px;
+      position: relative;
+      gap: 4px;
+      display: flex;
+      align-items: center; }
+      section.industries_section .wrapper-card::before {
+        content: '';
+        display: inline-block;
+        width: 10px;
+        height: 100%;
+        opacity: 0;
+        transition: 0.3s ease-in-out;
+        background: url(../../assets/images/left.svg) center left/contain no-repeat; }
+      section.industries_section .wrapper-card::after {
+        content: '';
+        display: inline-block;
+        width: 10px;
+        height: 100%;
+        opacity: 0;
+        transition: 0.3s ease-in-out;
+        background: url(../../assets/images/right.svg) center right/contain no-repeat; }
+      @media (max-width: 991px) {
+        section.industries_section .wrapper-card {
+          flex: 1 1 150px; } }
+      section.industries_section .wrapper-card-content {
+        gap: 8px;
+        width: 100%;
+        display: flex;
+        color: #FFFFFF;
+        padding: 10px;
+        align-items: center;
+        border-radius: 4px;
+        background: #070B31;
+        transition: 0.2s ease-in-out; }
+        section.industries_section .wrapper-card-content span {
+          color: inherit;
+          font-size: 1rem;
+          font-weight: 600;
+          display: inline-block;
+          white-space: nowrap;
+          transition: 0.2s ease-in-out; }
+      section.industries_section .wrapper-card:hover::before, section.industries_section .wrapper-card:hover::after {
+        opacity: 1;
+        transform: scale(1.25); }
+      section.industries_section .wrapper-card:hover > .wrapper-card-content {
+        background-color: #62BCFC;
+        color: #000000; }
   section.blog_section {
     background: #030834; }
     section.blog_section .swiper-slide {
