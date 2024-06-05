@@ -20,27 +20,6 @@ var experience_swiper = new Swiper(".experience-card-slider", {
     },
 });
 
-var education_swiper = new Swiper(".education-card-slider", {
-    slidesPerView: 1,
-    spaceBetween: 20,
-    centeredSlides: true,
-    loop: true,
-    loopedSlides: 10,
-    // pagination: {
-    //   el: ".swiper-pagination",
-    //   clickable: true,
-    // },
-    breakpoints: {
-        640: {
-            slidesPerView: 1.5,
-        },
-        1024: {
-            slidesPerView: 3,
-        },
-    },
-});
-
-
 var testimonial_swiper = new Swiper(".testimonial-card-slider", {
     slidesPerView: 1,
     spaceBetween: 20,
