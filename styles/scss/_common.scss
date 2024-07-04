@@ -304,12 +304,11 @@ section {
             padding: 1.25rem 0;
 
             .testimonial-card {
-                padding: 3rem 2rem;
-                gap: 0.5rem;
+                padding: 2rem;
                 min-height: 250px;
                 background: #00042A;
-                border-radius: 30px;
-                border: 1px solid rgba(132, 144, 255, 0.3);
+                // border-radius: 30px;
+                // border: 1px solid rgba(132, 144, 255, 0.3);
                 transition: 0.3s ease-in-out;
 
                 @include breakpoint(small) {
@@ -338,7 +337,7 @@ section {
                 }
 
                 &:hover {
-                    box-shadow: 0 0 20px #62BCFC;
+                    background: rgba(132, 144, 255, 0.1);
                 }
             }
 
@@ -350,7 +349,7 @@ section {
                 }
 
                 .testimonial-card {
-                    box-shadow: 0 0 20px #62BCFC;
+                    background: rgba(132, 144, 255, 0.1);
                 }
             }
         }
