@@ -9303,9 +9303,13 @@ html {
       font-size: 14px; } }
 
 body {
-  overflow-x: hidden;
   background: #00042A;
-  font-family: "Raleway", sans-serif; }
+  font-family: "Raleway", sans-serif;
+  transition: 0.3s ease-out;
+  overflow-x: hidden;
+  max-width: 100%;
+  width: 100%;
+  overscroll-behavior: none; }
 
 @media (min-width: 1400px) {
   .container,
@@ -9734,6 +9738,8 @@ section {
         section.testimonial_section .swiper-slide .testimonial-card .user-info figure img {
           max-height: 5rem;
           max-width: 5rem; }
+      section.testimonial_section .swiper-slide .testimonial-card:hover {
+        box-shadow: 0 0 20px #62BCFC; }
     section.testimonial_section .swiper-slide.swiper-slide-active {
       padding: 1rem 0; }
       @media (max-width: 767px) {
@@ -9868,6 +9874,24 @@ section {
   padding: 0;
   background: none;
   color: #FFFFFF; }
+
+#sectionPin {
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  left: 0;
+  background: var(--text-color);
+  color: var(--bg-color); }
+
+.pin-wrap {
+  height: 100vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 50px 10vw; }
+  .pin-wrap > * {
+    min-width: 60vw;
+    padding: 0 5vw; }
 
 @media (max-width: 767px) {
   footer img.f-logo {

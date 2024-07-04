@@ -26,6 +26,10 @@ var testimonial_swiper = new Swiper(".testimonial-card-slider", {
     centeredSlides: true,
     loop: true,
     loopedSlides: 10,
+    autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+    },
     // pagination: {
     //   el: ".swiper-pagination",
     //   clickable: true,
@@ -39,59 +43,6 @@ var testimonial_swiper = new Swiper(".testimonial-card-slider", {
         },
     },
 });
-
-
-
-// var project_slider_left_swiper = new Swiper(".project_slider_left", {
-//     slidesPerView: 1,
-//     spaceBetween: 30,
-//     direction: 'horizontal',
-//     freeMode: true,
-//     freeModeMomentum: false,
-//     freeModeMomentumBounce: false,
-//     speed: 5000,
-//     autoplay: {
-//         delay: 2000,
-//         disableOnInteraction: false,
-//         //waitForTransition: false,
-//         reverseDirection: true,
-//     },
-//     loop: true,
-//     breakpoints: {
-//         640: {
-//             slidesPerView: 2,
-//         },
-//         1024: {
-//             slidesPerView: 3,
-//         },
-//     }
-// });
-
-// var project_slider_right_swiper = new Swiper(".project_slider_right", {
-//     slidesPerView: 1,
-//     spaceBetween: 30,
-//     direction: 'horizontal',
-//     freeMode: true,
-//     freeModeMomentum: false,
-//     freeModeMomentumBounce: false,
-//     speed: 5000,
-//     autoplay: {
-//         delay: 2000,
-//         //waitForTransition: false,
-//         disableOnInteraction: false,
-//         reverseDirection: false,
-//     },
-//     loop: true,
-//     breakpoints: {
-//         640: {
-//             slidesPerView: 2,
-//         },
-//         1024: {
-//             slidesPerView: 3,
-//         },
-//     }
-// });
-
 
 
 var blog_swiper = new Swiper(".blog-card-slider", {
@@ -135,7 +86,7 @@ $('.project_slider_left').slick({
     arrows: false,
     infinite: true,
     cssEase: 'linear',
-    slidesToShow: 3,
+    slidesToShow: 3.25,
     slidesToScroll: 1,
     prevArrow: '<button type="button" class="slick-prev"><i class="fas fa-angle-double-left"></i></button>',
     nextArrow: '<button type="button" class="slick-next"><i class="fas fa-angle-double-right"></i></button>',
@@ -169,7 +120,7 @@ $('.project_slider_right').slick({
     infinite: true,
     cssEase: 'linear',
     rtl: true,
-    slidesToShow: 3,
+    slidesToShow: 3.25,
     slidesToScroll: 1,
     prevArrow: '<button type="button" class="slick-prev"><i class="fas fa-angle-double-left"></i></button>',
     nextArrow: '<button type="button" class="slick-next"><i class="fas fa-angle-double-right"></i></button>',

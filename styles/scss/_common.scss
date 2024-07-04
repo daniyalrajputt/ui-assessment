@@ -336,6 +336,10 @@ section {
                         }
                     }
                 }
+
+                &:hover {
+                    box-shadow: 0 0 20px #62BCFC;
+                }
             }
 
             &.swiper-slide-active {
@@ -563,4 +567,27 @@ section {
     padding: 0;
     background: none;
     color: $white;
+}
+
+
+#sectionPin {
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    left: 0;
+    background: var(--text-color);
+    color: var(--bg-color);
+}
+
+.pin-wrap {
+    height: 100vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 50px 10vw;
+
+    &>* {
+        min-width: 60vw;
+        padding: 0 5vw;
+    }
 }
